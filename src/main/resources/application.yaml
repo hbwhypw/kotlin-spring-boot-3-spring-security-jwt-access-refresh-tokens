@@ -1,4 +1,12 @@
 jwt:
-  key: ${JWT_KEY}
+  key: knpVfaUULOjJkQ4q6okwe427nR/gQ4J+i8oW3LbydOA=
+#  key: 4261656C64756E67
+  # 访问令牌过期时间，单位毫秒，默认1小时，最小300秒，最大1天
   access-token-expiration: 3600000
-  refresh-token-expiration: 86400000
+  # 刷新令牌过期时间，单位毫秒，默认1小时，最小300秒，最大1天
+  refresh-token-expiration: 3600000
+spring:
+  messages:
+    basename: messages
+    encoding: UTF-8
+    fallback-to-system-locale: true
